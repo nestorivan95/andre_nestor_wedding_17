@@ -5,9 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Configuración para GitHub Pages
-  basePath: '/andre_nestor_wedding',
-  assetPrefix: '/andre_nestor_wedding',
+  // Sin basePath para que funcione en la raíz de GitHub Pages
   trailingSlash: true,
 }
 
