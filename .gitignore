@@ -34,3 +34,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Archivos antiguos que no se usan en Next.js
+# (mantenerlos comentados por si acaso)
+# /css/
+# /js/
+# /img/
+# /fonts/
