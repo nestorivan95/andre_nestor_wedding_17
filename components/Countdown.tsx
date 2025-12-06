@@ -11,9 +11,8 @@ export default function Countdown() {
   })
 
   useEffect(() => {
-    // Fecha del matrimonio - 17 de mayo de 2026 a las 10:00 AM
-    // Usando UTC para evitar problemas de zona horaria
-    const targetDate = new Date('2026-05-17T10:00:00')
+    // Fecha del matrimonio - 17 de mayo de 2026 a las 10:00 AM (hora local)
+    const targetDate = new Date(2026, 4, 17, 10, 0, 0) // Mes es 0-indexed (4 = mayo)
     
     const updateCountdown = () => {
       const now = new Date()
@@ -25,7 +24,12 @@ export default function Countdown() {
         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
         const seconds = Math.floor((diff % (1000 * 60)) / 1000)
 
-        setTimeLeft({ days, hours, minutes, seconds })
+        setTimeLeft({ 
+          days: Math.max(0, days), 
+          hours: Math.max(0, hours), 
+          minutes: Math.max(0, minutes), 
+          seconds: Math.max(0, seconds) 
+        })
       } else {
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 })
       }
