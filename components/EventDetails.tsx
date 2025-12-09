@@ -66,23 +66,11 @@ export default function EventDetails() {
           </h3>
           
           <div className="space-y-6">
-            <div className="grid md:grid-cols-3 gap-6 mt-4">
-              <div className="p-6 bg-wedding-cream rounded-xl">
-                <div className="text-wedding-gold text-2xl mb-2">💒</div>
-                <h4 className="font-semibold text-lg mb-2">Ceremonia Simbólica</h4>
-                <p className="text-gray-700">Por confirmar</p>
-              </div>
-              
-              <div className="p-6 bg-wedding-cream rounded-xl">
-                <div className="text-wedding-gold text-2xl mb-2">🥂</div>
-                <h4 className="font-semibold text-lg mb-2">Cóctel</h4>
-                <p className="text-gray-700">Por confirmar</p>
-              </div>
-              
-              <div className="p-6 bg-wedding-cream rounded-xl">
-                <div className="text-wedding-gold text-2xl mb-2">🎉</div>
-                <h4 className="font-semibold text-lg mb-2">Fiesta</h4>
-                <p className="text-gray-700">Por confirmar</p>
+            <div className="text-center mb-8">
+              <div className="p-6 bg-wedding-cream rounded-xl max-w-md mx-auto">
+                <div className="text-wedding-gold text-3xl mb-3">🎉</div>
+                <h4 className="font-semibold text-xl mb-2">Ceremonia Simbólica, Cóctel y Fiesta</h4>
+                <p className="text-gray-700 text-lg">3:30 PM</p>
               </div>
             </div>
 
@@ -145,7 +133,7 @@ export default function EventDetails() {
                 Puntualidad
               </h4>
               <p className="text-gray-700">
-                La ceremonia comenzará puntualmente a las 6:00 PM.
+                El evento comenzará puntualmente a las 3:30 PM.
                 Te agradecemos llegar a tiempo para no perderte ningún momento especial.
               </p>
             </div>
@@ -169,13 +157,24 @@ export default function EventDetails() {
               </p>
             </div>
 
-            <div className="mb-6 p-6 bg-wedding-cream rounded-xl">
-              <h4 className="font-semibold text-lg mb-3 text-center">
-                👔 Para los Hombres
-              </h4>
-              <p className="text-gray-700 text-center">
-                Smoking negro
-              </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="p-6 bg-wedding-cream rounded-xl">
+                <h4 className="font-semibold text-lg mb-3 text-center">
+                  <span className="text-2xl mr-2">🤵</span> Para los Hombres
+                </h4>
+                <p className="text-gray-700 text-center">
+                  Smoking negro
+                </p>
+              </div>
+              
+              <div className="p-6 bg-wedding-cream rounded-xl">
+                <h4 className="font-semibold text-lg mb-3 text-center">
+                  <span className="text-2xl mr-2">👗</span> Para las Mujeres
+                </h4>
+                <p className="text-gray-700 text-center">
+                  Traje elegante
+                </p>
+              </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -191,9 +190,9 @@ export default function EventDetails() {
                 </ul>
               </div>
               
-              <div className="p-6 bg-red-50 rounded-xl border-l-4 border-red-400">
-                <h4 className="font-semibold text-lg mb-3 text-red-800">
-                  🚫 Colores Reservados
+              <div className="p-6 bg-yellow-50 rounded-xl border-l-4 border-yellow-400">
+                <h4 className="font-semibold text-lg mb-3 text-yellow-800">
+                  ⚠️ Colores Reservados
                 </h4>
                 <ul className="text-gray-700 space-y-2">
                   <li>• Blanco (reservado para la novia)</li>

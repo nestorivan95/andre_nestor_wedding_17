@@ -16,8 +16,7 @@ export default function TravelInfo() {
           </h3>
           
           <p className="text-center text-gray-700 mb-8">
-            Hemos negociado tarifas especiales en los siguientes hoteles para nuestros invitados.
-            Menciona "Boda Andrea & Nestor" al hacer tu reservación.
+            Estas son las opciones más cercanas y recomendadas para nuestros invitados.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -36,9 +35,6 @@ export default function TravelInfo() {
                 </p>
                 <p className="text-gray-600">
                   <span className="font-semibold">Tarifa aproximada:</span> Por confirmar
-                </p>
-                <p className="text-sm text-gray-500 mt-2">
-                  * Menciona "Boda Andrea & Néstor" al hacer tu reservación
                 </p>
               </div>
             </div>
@@ -59,9 +55,6 @@ export default function TravelInfo() {
                 <p className="text-gray-600">
                   <span className="font-semibold">Tarifa aproximada:</span> Por confirmar
                 </p>
-                <p className="text-sm text-gray-500 mt-2">
-                  * Menciona "Boda Andrea & Néstor" al hacer tu reservación
-                </p>
               </div>
             </div>
           </div>
@@ -80,15 +73,14 @@ export default function TravelInfo() {
                 Desde el Aeropuerto José María Córdova
               </h4>
               <p className="text-gray-700 mb-4">
-                El Aeropuerto Internacional José María Córdova está ubicado en Rionegro, 
-                aproximadamente a 30-45 minutos de Llanogrande, dependiendo del tráfico.
+                El Aeropuerto Internacional José María Córdova está ubicado en Rionegro.
               </p>
               
               <div className="space-y-4">
                 <div>
                   <h5 className="font-semibold text-gray-800 mb-2">A la Parroquia Nuestra Señora de Chiquinquirá:</h5>
                   <ul className="text-gray-700 space-y-2 text-sm ml-4">
-                    <li>• <strong>Taxi/Uber:</strong> Aproximadamente 45-60 minutos</li>
+                    <li>• <strong>Taxi/Uber:</strong> Aproximadamente 10-15 minutos</li>
                     <li>• <strong>Transporte privado:</strong> Contacta con el hotel para opciones</li>
                     <li>• <strong>Renta de auto:</strong> Disponible en el aeropuerto</li>
                   </ul>
@@ -97,7 +89,7 @@ export default function TravelInfo() {
                 <div>
                   <h5 className="font-semibold text-gray-800 mb-2">A SantaMonica Premium:</h5>
                   <ul className="text-gray-700 space-y-2 text-sm ml-4">
-                    <li>• <strong>Taxi/Uber:</strong> Aproximadamente 45-60 minutos</li>
+                    <li>• <strong>Taxi/Uber:</strong> Aproximadamente 15 minutos</li>
                     <li>• <strong>Transporte privado:</strong> Contacta con el hotel para opciones</li>
                     <li>• <strong>Renta de auto:</strong> Disponible en el aeropuerto</li>
                   </ul>

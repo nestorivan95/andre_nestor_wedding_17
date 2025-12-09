@@ -13,27 +13,31 @@ export default function Contact() {
   const faqs: FAQ[] = [
     {
       question: '¿Hasta cuándo puedo confirmar mi asistencia?',
-      answer: 'Te pedimos que confirmes tu asistencia antes del 1 de Junio de 2024 para poder organizar mejor el evento.',
-    },
-    {
-      question: '¿Puedo llevar acompañantes?',
-      answer: 'Sí, puedes indicar el número de acompañantes en el formulario de RSVP. Por favor confirma solo el número de personas que realmente asistirán.',
+      answer: 'Agradecemos que puedas confirmar tu asistencia antes del 1 de abril del 2026, para poder organizar todos los detalles adecuadamente.',
     },
     {
       question: '¿Habrá comida vegetariana/vegana?',
-      answer: 'Sí, por supuesto. Por favor indica tus restricciones alimentarias en el formulario de RSVP y nos aseguraremos de tener opciones para ti.',
+      answer: 'Sí, contamos con opciones vegetarianas y veganas. Solo indícalo al registrar tu RSVP y lo tendremos considerado para tu menú.',
     },
     {
       question: '¿Dónde puedo estacionar?',
-      answer: 'El salón cuenta con estacionamiento gratuito para todos los invitados. Te recomendamos llegar con 15 minutos de anticipación.',
-    },
-    {
-      question: '¿Puedo tomar fotos durante la ceremonia?',
-      answer: 'Durante la ceremonia, preferimos que no se tomen fotos para que todos puedan disfrutar del momento. Tendremos un fotógrafo profesional. Sin embargo, durante la fiesta, ¡siéntete libre de tomar todas las fotos que quieras!',
+      answer: 'El lugar cuenta con estacionamiento. Los cupos son limitados, llega 10 minutos antes para poder asegurar tu cupo.',
     },
     {
       question: '¿Qué pasa si no puedo asistir?',
-      answer: 'Entendemos que pueden surgir imprevistos. Por favor avísanos lo antes posible para que podamos ajustar los planes. Puedes contactarnos usando la información de contacto a continuación.',
+      answer: 'No te preocupes, solo te pedimos registrar tu respuesta en el RSVP.',
+    },
+    {
+      question: '¿Puedo llevar niños?',
+      answer: 'Por temas de logística y para que todos puedan disfrutar plenamente, el evento será exclusivamente para adultos. ¡Agradecemos tu comprensión!',
+    },
+    {
+      question: '¿Qué tan lejos está el recinto de la ciudad/hoteles principales?',
+      answer: 'Para que los invitados planifiquen su regreso.',
+    },
+    {
+      question: '¿La ceremonia y la recepción serán en el mismo lugar?',
+      answer: 'Sí, ambos eventos se realizarán en Santa Monica el 17 de mayo.',
     },
   ]
 
@@ -63,7 +67,7 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="text-center p-6 bg-white rounded-xl shadow-md">
               <div className="text-4xl mb-4">👰</div>
-              <h4 className="font-semibold text-xl mb-2">Andr</h4>
+              <h4 className="font-semibold text-xl mb-2">Andrea Guzmán</h4>
               <p className="text-gray-600 mb-3">Novia</p>
               <a
                 href="mailto:andre@ejemplo.com"
@@ -81,7 +85,7 @@ export default function Contact() {
 
             <div className="text-center p-6 bg-white rounded-xl shadow-md">
               <div className="text-4xl mb-4">🤵</div>
-              <h4 className="font-semibold text-xl mb-2">Nestor</h4>
+              <h4 className="font-semibold text-xl mb-2">Néstor Ramírez</h4>
               <p className="text-gray-600 mb-3">Novio</p>
               <a
                 href="mailto:nestor@ejemplo.com"

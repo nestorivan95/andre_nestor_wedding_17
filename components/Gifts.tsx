@@ -13,8 +13,7 @@ export default function Gifts() {
           <div className="text-5xl mb-6">🎁</div>
           
           <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-            Tu presencia es el mejor regalo que podemos recibir. Sin embargo,
-            si deseas hacernos un obsequio, te compartimos algunas opciones.
+            Te compartimos algunas opciones.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mt-12">
@@ -24,20 +23,11 @@ export default function Gifts() {
                 Lista de Regalos
               </h3>
               <p className="text-gray-700 mb-6">
-                Puedes visitar nuestra lista de regalos en las siguientes tiendas:
+                Más adelante publicaremos nuestra lista de regalos. 
+                Les estaremos avisando con tiempo para que puedan elegir.
               </p>
-              <div className="space-y-4">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block btn-secondary"
-                >
-                  Ver Lista de Regalos
-                </a>
-              </div>
-              <p className="text-sm text-gray-500 mt-4">
-                * Agrega aquí el enlace a tu lista de regalos
+              <p className="text-sm text-gray-500">
+                * En este momento no tenemos la lista disponible
               </p>
             </div>
 
