@@ -97,7 +97,7 @@ export default function Countdown() {
       </div>
 
       <p className="text-center text-gray-600 mt-12 text-lg">
-        Nos vemos muy pronto
+        Nos vemos muy pronto...
       </p>
     </section>
   )

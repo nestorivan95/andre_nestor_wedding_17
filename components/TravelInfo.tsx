@@ -129,7 +129,7 @@ export default function TravelInfo() {
               Para moverse por Llanogrande y alrededores, te recomendamos:
             </p>
             
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
               <div className="p-4 bg-wedding-cream rounded-lg">
                 <p className="font-semibold mb-2">Uber / DiDi</p>
                 <p className="text-sm text-gray-600">Aplicaciones de transporte</p>
@@ -138,6 +138,13 @@ export default function TravelInfo() {
                 <p className="font-semibold mb-2">Taxi</p>
                 <p className="text-sm text-gray-600">Sitios oficiales recomendados</p>
               </div>
+            </div>
+
+            <div className="p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-lg text-left">
+              <p className="text-gray-700 text-sm">
+                <span className="font-semibold">Nota importante:</span> Un taxi desde Medellín hasta el lugar del evento 
+                puede superar los $100.000 pesos por trayecto. Ten esto en cuenta al escoger tu hospedaje.
+              </p>
             </div>
           </div>
         </div>

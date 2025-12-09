@@ -37,7 +37,7 @@ export default function Contact() {
     },
     {
       question: '¿La ceremonia y la recepción serán en el mismo lugar?',
-      answer: 'Sí, ambos eventos se realizarán en Santa Monica el 17 de mayo.',
+      answer: 'La boda católica será en la Parroquia el sábado 16 de mayo. Mientras que la ceremonia simbólica, cóctel y la fiesta se van a realizar el 17 de mayo en el mismo lugar, en Santa Monica Premium.',
     },
   ]
 
@@ -69,10 +69,9 @@ export default function Contact() {
             <div className="text-center p-6 bg-white rounded-xl shadow-md">
               <div className="text-4xl mb-4">👰</div>
               <h4 className="font-semibold text-xl mb-2">Andrea Guzmán</h4>
-              <p className="text-gray-600 mb-3">Novia</p>
               <a
                 href="mailto:andreitagga98@gmail.com"
-                className="text-wedding-gold hover:underline block"
+                className="text-wedding-gold hover:underline block mt-4"
               >
                 andreitagga98@gmail.com
               </a>
@@ -87,10 +86,9 @@ export default function Contact() {
             <div className="text-center p-6 bg-white rounded-xl shadow-md">
               <div className="text-4xl mb-4">🤵</div>
               <h4 className="font-semibold text-xl mb-2">Néstor Ramírez</h4>
-              <p className="text-gray-600 mb-3">Novio</p>
               <a
                 href="mailto:nestorivan00@gmail.com"
-                className="text-wedding-gold hover:underline block"
+                className="text-wedding-gold hover:underline block mt-4"
               >
                 nestorivan00@gmail.com
               </a>

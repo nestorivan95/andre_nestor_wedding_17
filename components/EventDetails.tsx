@@ -19,7 +19,7 @@ export default function EventDetails() {
             <div className="text-center mb-8">
               <div className="p-6 bg-wedding-cream rounded-xl max-w-md mx-auto">
                 <h4 className="font-semibold text-xl mb-2">Ceremonia Católica</h4>
-                <p className="text-gray-700 text-lg">10:00 AM</p>
+                <p className="text-gray-700 text-lg">9:30 AM</p>
               </div>
             </div>
 
@@ -110,8 +110,8 @@ export default function EventDetails() {
         {/* Nota sobre día festivo */}
         <div className="bg-wedding-light rounded-2xl shadow-lg p-6 md:p-8 border-l-4 border-wedding-gold">
           <p className="text-gray-700 text-center">
-            <span className="font-semibold">Nota:</span> El lunes 18 de mayo es día festivo, 
-            así que no te preocupes por el regreso. ¡Disfruta el fin de semana completo!
+            <span className="font-semibold">Nota:</span> El lunes 18 de mayo es día festivo. 
+            ¡Disfruta el fin de semana completo!
           </p>
         </div>
 
@@ -192,7 +192,7 @@ export default function EventDetails() {
                     <span className="text-2xl mr-2">🤵🏻</span> Para los Hombres
                   </h5>
                   <ul className="text-gray-700 space-y-2 text-center">
-                    <li>Smoking</li>
+                    <li>Smoking negro</li>
                     <li>Moño negro</li>
                     <li>Zapatos negros</li>
                   </ul>
@@ -229,7 +229,7 @@ export default function EventDetails() {
                 Consideraciones del Clima
               </h4>
               <p className="text-gray-700">
-                El evento será en interiores con clima controlado. Sin embargo,
+                El evento será en interiores. Sin embargo,
                 te recomendamos traer una chaqueta ligera por si acaso. El salón
                 tiene piso de mármol, así que considera zapatos cómodos para bailar.
               </p>
