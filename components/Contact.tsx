@@ -37,7 +37,7 @@ export default function Contact() {
     },
     {
       question: '¿La ceremonia y la recepción serán en el mismo lugar?',
-      answer: 'La boda católica será en la Parroquia el sábado 16 de mayo. Mientras que la ceremonia simbólica, cóctel y la fiesta se van a realizar el 17 de mayo en el mismo lugar, en Santa Monica Premium.',
+      answer: 'Sí, la ceremonia simbólica, cóctel y la fiesta se realizarán el 17 de mayo en el mismo lugar, en SantaMonica Premium.',
     },
   ]
 
@@ -60,9 +60,8 @@ export default function Contact() {
           </h3>
           
           <p className="text-center text-gray-700 mb-8 text-lg">
-            Por favor, comunícate con alguno de los novios para confirmar tu asistencia.
-            En tu confirmación, indícanos si asistirás a ambos días (16 y 17 de mayo) o solo a uno,
-            especificando cuál día.
+            Por favor, comunícate con alguno de los novios para confirmar tu asistencia
+            al evento del 17 de mayo.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">

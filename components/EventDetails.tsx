@@ -9,56 +9,7 @@ export default function EventDetails() {
       <h2 className="section-title">Detalles del Evento</h2>
 
       <div className="max-w-4xl mx-auto space-y-12">
-        {/* Día 1 - Sábado 16 de Mayo */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-          <h3 className="text-3xl font-elegant text-wedding-gold mb-6 text-center">
-            Sábado, 16 de Mayo de 2026
-          </h3>
-          
-          <div className="space-y-6">
-            <div className="text-center mb-8">
-              <div className="p-6 bg-wedding-cream rounded-xl max-w-md mx-auto">
-                <h4 className="font-semibold text-xl mb-2">Ceremonia Católica</h4>
-                <p className="text-gray-700 text-lg">9:30 AM</p>
-              </div>
-            </div>
-
-            {/* Ubicación Sábado */}
-            <div className="border-t border-gray-200 pt-6">
-              <h4 className="text-2xl font-elegant text-wedding-gold mb-4 text-center">
-                Ubicación
-              </h4>
-              <div className="text-center space-y-4">
-                <p className="text-xl font-semibold text-gray-800">
-                  Parroquia Nuestra Señora de Chiquinquirá
-                </p>
-                <p className="text-lg text-gray-600">
-                  Llanogrande, Antioquia
-                </p>
-                
-                <div className="mt-4 bg-wedding-cream rounded-lg p-4 flex items-center justify-center min-h-[300px]">
-                  <div className="text-center">
-                    <div className="text-4xl mb-4">📍</div>
-                    <p className="text-gray-700 mb-4">
-                      Haz clic en el botón para ver la ubicación en Google Maps
-                    </p>
-                  </div>
-                </div>
-                
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=Parroquia+Nuestra+Señora+de+Chiquinquirá+Llanogrande+Antioquia"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block btn-secondary mt-4"
-                >
-                  Abrir en Google Maps
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Día 2 - Domingo 17 de Mayo */}
+        {/* Domingo 17 de Mayo */}
         <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
           <h3 className="text-3xl font-elegant text-wedding-gold mb-6 text-center">
             Domingo, 17 de Mayo de 2026
@@ -107,14 +58,6 @@ export default function EventDetails() {
           </div>
         </div>
 
-        {/* Nota sobre día festivo */}
-        <div className="bg-wedding-light rounded-2xl shadow-lg p-6 md:p-8 border-l-4 border-wedding-gold">
-          <p className="text-gray-700 text-center">
-            <span className="font-semibold">Nota:</span> El lunes 18 de mayo es día festivo. 
-            ¡Disfruta el fin de semana completo!
-          </p>
-        </div>
-
         {/* Información Útil */}
         <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
           <h3 className="text-3xl font-elegant text-wedding-gold mb-6 text-center">
@@ -153,38 +96,8 @@ export default function EventDetails() {
           </h3>
           
           <div className="space-y-12">
-            {/* Sábado 16 de Mayo */}
-            <div>
-              <h4 className="text-2xl font-elegant text-wedding-gold mb-6 text-center">
-                Sábado, 16 de Mayo de 2026
-              </h4>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="p-6 bg-wedding-cream rounded-xl">
-                  <h5 className="font-semibold text-lg mb-3 text-center">
-                    <span className="text-2xl mr-2">🤵🏻</span> Para los Hombres
-                  </h5>
-                  <p className="text-gray-700 text-center">
-                    Business casual
-                  </p>
-                </div>
-                
-                <div className="p-6 bg-wedding-cream rounded-xl">
-                  <h5 className="font-semibold text-lg mb-3 text-center">
-                    <span className="text-2xl mr-2">👩🏻</span> Para las Mujeres
-                  </h5>
-                  <p className="text-gray-700 text-center">
-                    Business casual
-                  </p>
-                </div>
-              </div>
-            </div>
-
             {/* Domingo 17 de Mayo */}
             <div>
-              <h4 className="text-2xl font-elegant text-wedding-gold mb-6 text-center">
-                Domingo, 17 de Mayo de 2026
-              </h4>
               
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="p-6 bg-wedding-cream rounded-xl">
