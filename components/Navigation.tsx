@@ -15,8 +15,8 @@ export default function Navigation({ isScrolled }: NavigationProps) {
     { label: 'Código de Vestuario', href: '#vestimenta' },
     { label: 'Regalos', href: '#regalos' },
     { label: 'Viaje', href: '#viaje' },
-    { label: 'FAQ', href: '#faq' },
     { label: 'RSVP', href: '#rsvp' },
+    { label: 'FAQ', href: '#faq' },
   ]
 
   const scrollToSection = (href: string) => {

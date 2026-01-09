@@ -44,24 +44,16 @@ export default function TravelInfo() {
             </div>
 
             <div className="p-6 bg-wedding-cream rounded-xl border-l-4 border-wedding-gold">
-              <h4 className="font-semibold text-xl mb-2">Hotel Movich</h4>
+              <h4 className="font-semibold text-xl mb-2">Aparta Suite Hotel Rioverde Aeropuerto JMC</h4>
               <div className="space-y-2 text-sm">
                 <p className="text-gray-600">
-                  <span className="font-semibold">Dirección:</span> Glorieta Aeropuerto José María Córdova, Rionegro, Antioquia
+                  <span className="font-semibold">Dirección:</span> Aeropuerto José María Cordova - Llanogrande Suite 214, 054047 Rionegro, Colombia
                 </p>
                 <p className="text-gray-600">
-                  <span className="font-semibold">Tel:</span> (601) 4824466
+                  <span className="font-semibold">Tel:</span> 310 4169182
                 </p>
                 <p className="text-gray-600">
-                  <span className="font-semibold">Página web:</span>{' '}
-                  <a
-                    href="https://www.movichhotels.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-wedding-gold hover:underline"
-                  >
-                    https://www.movichhotels.com/
-                  </a>
+                  <span className="font-semibold">Página web:</span> Booking o Airbnb
                 </p>
               </div>
             </div>
