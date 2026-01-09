@@ -78,15 +78,6 @@ export default function TravelInfo() {
               
               <div className="space-y-4">
                 <div>
-                  <h5 className="font-semibold text-gray-800 mb-2">A la Parroquia Nuestra Señora de Chiquinquirá:</h5>
-                  <ul className="text-gray-700 space-y-2 text-sm ml-4">
-                    <li>• <strong>Taxi/Uber:</strong> Aproximadamente 10-15 minutos</li>
-                    <li>• <strong>Transporte privado:</strong> Contacta con el hotel para opciones</li>
-                    <li>• <strong>Renta de auto:</strong> Disponible en el aeropuerto</li>
-                  </ul>
-                </div>
-                
-                <div>
                   <h5 className="font-semibold text-gray-800 mb-2">A SantaMonica Premium:</h5>
                   <ul className="text-gray-700 space-y-2 text-sm ml-4">
                     <li>• <strong>Taxi/Uber:</strong> Aproximadamente 15 minutos</li>
