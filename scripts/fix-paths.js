@@ -3,23 +3,64 @@ const path = require('path');
 
 const outDir = path.join(__dirname, '..', 'out');
 
-// Función para reemplazar rutas en archivos
-function replaceInFile(filePath, search, replace) {
-  let content = fs.readFileSync(filePath, 'utf8');
-  const originalContent = content;
-  
-  // Reemplazar todas las ocurrencias
-  content = content.split(search).join(replace);
-  
-  if (content !== originalContent) {
-    fs.writeFileSync(filePath, content, 'utf8');
-    return true;
+// Función para procesar un archivo y corregir todas las rutas
+function fixPathsInFile(filePath) {
+  try {
+    let content = fs.readFileSync(filePath, 'utf8');
+    const originalContent = content;
+    
+    // Reemplazar todas las variantes de rutas ../_next/ y /_next/ por ./_next/
+    // Usar expresiones regulares para capturar diferentes contextos
+    
+    // En atributos href y src
+    content = content.replace(/href="\.\.\/_next\//g, 'href="./_next/');
+    content = content.replace(/href='\.\.\/_next\//g, "href='./_next/");
+    content = content.replace(/src="\.\.\/_next\//g, 'src="./_next/');
+    content = content.replace(/src='\.\.\/_next\//g, "src='./_next/");
+    
+    // Rutas absolutas /_next/
+    content = content.replace(/href="\/_next\//g, 'href="./_next/');
+    content = content.replace(/href='\/_next\//g, "href='./_next/");
+    content = content.replace(/src="\/_next\//g, 'src="./_next/');
+    content = content.replace(/src='\/_next\//g, "src='./_next/");
+    
+    // En strings de JavaScript (comillas dobles y simples)
+    content = content.replace(/"\.\.\/_next\//g, '"./_next/');
+    content = content.replace(/'\.\.\/_next\//g, "'./_next/");
+    content = content.replace(/"\/_next\//g, '"./_next/');
+    content = content.replace(/'\/_next\//g, "'./_next/");
+    
+    // En funciones url() de CSS
+    content = content.replace(/url\("\.\.\/_next\//g, 'url("./_next/');
+    content = content.replace(/url\('\.\.\/_next\//g, "url('./_next/");
+    content = content.replace(/url\(\.\.\/_next\//g, 'url(./_next/');
+    content = content.replace(/url\("\/_next\//g, 'url("./_next/');
+    content = content.replace(/url\('\/_next\//g, "url('./_next/");
+    content = content.replace(/url\(\/_next\//g, 'url(./_next/');
+    
+    // Rutas específicas del proyecto
+    content = content.replace(/\/andre_nestor_wedding\//g, './');
+    content = content.replace(/"\/andre_nestor_wedding\//g, '"./');
+    content = content.replace(/'\/andre_nestor_wedding\//g, "'./");
+    
+    if (content !== originalContent) {
+      fs.writeFileSync(filePath, content, 'utf8');
+      return true;
+    }
+    return false;
+  } catch (error) {
+    console.error(`Error procesando ${filePath}:`, error.message);
+    return false;
   }
-  return false;
 }
 
 // Función recursiva para procesar archivos
 function processDirectory(dir) {
+  if (!fs.existsSync(dir)) {
+    console.error(`El directorio ${dir} no existe`);
+    return 0;
+  }
+
   const files = fs.readdirSync(dir);
   let changed = 0;
   
@@ -29,16 +70,10 @@ function processDirectory(dir) {
     
     if (stat.isDirectory()) {
       changed += processDirectory(filePath);
-    } else if (file.endsWith('.html') || file.endsWith('.js') || file.endsWith('.css') || file.endsWith('.txt')) {
-      // Reemplazar rutas absolutas por relativas
-      if (replaceInFile(filePath, '/_next/', './_next/')) changed++;
-      if (replaceInFile(filePath, '"/_next/', '"./_next/')) changed++;
-      if (replaceInFile(filePath, "'/_next/", "'./_next/")) changed++;
-      if (replaceInFile(filePath, 'href="/_next/', 'href="./_next/')) changed++;
-      if (replaceInFile(filePath, 'src="/_next/', 'src="./_next/')) changed++;
-      if (replaceInFile(filePath, '/andre_nestor_wedding/', './')) changed++;
-      if (replaceInFile(filePath, '"/andre_nestor_wedding/', '"./')) changed++;
-      if (replaceInFile(filePath, "'/andre_nestor_wedding/", "'./")) changed++;
+    } else if (file.endsWith('.html') || file.endsWith('.js') || file.endsWith('.css') || file.endsWith('.txt') || file.endsWith('.json')) {
+      if (fixPathsInFile(filePath)) {
+        changed++;
+      }
     }
   });
   
@@ -48,4 +83,3 @@ function processDirectory(dir) {
 console.log('Ajustando rutas para GitHub Pages...');
 const changed = processDirectory(outDir);
 console.log(`✅ Rutas ajustadas correctamente (${changed} archivos modificados)`);
-
