@@ -141,7 +141,7 @@ export default function EventDetails() {
                   Consulta nuestro moodboard en Pinterest como referencia:
                 </p>
                 <a
-                  href="#"
+                  href="https://pin.it/h3bk8Dedg"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block btn-secondary"
