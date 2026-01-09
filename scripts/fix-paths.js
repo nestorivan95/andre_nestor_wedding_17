@@ -38,10 +38,18 @@ function fixPathsInFile(filePath) {
     content = content.replace(/url\('\/_next\//g, "url('./_next/");
     content = content.replace(/url\(\/_next\//g, 'url(./_next/');
     
-    // Rutas específicas del proyecto
-    content = content.replace(/\/andre_nestor_wedding\//g, './');
-    content = content.replace(/"\/andre_nestor_wedding\//g, '"./');
-    content = content.replace(/'\/andre_nestor_wedding\//g, "'./");
+    // Rutas que incluyen el basePath (ej: /andre_nestor_wedding_17/_next/ -> ./_next/)
+    content = content.replace(/href="\/andre_nestor_wedding_17\/_next\//g, 'href="./_next/');
+    content = content.replace(/href='\/andre_nestor_wedding_17\/_next\//g, "href='./_next/");
+    content = content.replace(/src="\/andre_nestor_wedding_17\/_next\//g, 'src="./_next/');
+    content = content.replace(/src='\/andre_nestor_wedding_17\/_next\//g, "src='./_next/");
+    content = content.replace(/"\/andre_nestor_wedding_17\/_next\//g, '"./_next/');
+    content = content.replace(/'\/andre_nestor_wedding_17\/_next\//g, "'./_next/");
+    
+    // Rutas específicas del proyecto (nombres antiguos y nuevos)
+    content = content.replace(/\/andre_nestor_wedding(_17)?\//g, './');
+    content = content.replace(/"\/andre_nestor_wedding(_17)?\//g, '"./');
+    content = content.replace(/'\/andre_nestor_wedding(_17)?\//g, "'./");
     
     if (content !== originalContent) {
       fs.writeFileSync(filePath, content, 'utf8');

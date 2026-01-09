@@ -5,7 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Sin basePath para que funcione en la raíz de GitHub Pages
+  // Configurar basePath si el repositorio no es usuario.github.io
+  // Si tu repositorio se llama 'andre_nestor_wedding_17', descomenta la siguiente línea:
+  basePath: '/andre_nestor_wedding_17',
   trailingSlash: true,
 }
 
