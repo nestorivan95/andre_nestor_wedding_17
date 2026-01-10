@@ -17,9 +17,9 @@ module.exports = {
         'wedding-green': '#8BAF8F',      // Verde suave medio
       },
       fontFamily: {
-        'elegant': ['Playfair Display', 'serif'],
-        'wedding': ['Dancing Script', 'cursive'],
-        'body': ['Lato', 'sans-serif'],
+        'elegant': ['var(--font-elegant)', 'Playfair Display', 'Georgia', 'serif'],
+        'wedding': ['var(--font-wedding)', 'Dancing Script', 'Brush Script MT', 'cursive'],
+        'body': ['var(--font-body)', 'Lato', 'Arial', 'sans-serif'],
       },
     },
   },

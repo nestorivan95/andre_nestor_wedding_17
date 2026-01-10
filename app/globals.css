@@ -5,11 +5,23 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
   
   body {
     @apply bg-wedding-cream text-gray-800;
     background-color: #F2EDEB;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+  }
+  
+  /* Mejorar renderizado de fuentes en Windows */
+  h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 }
 

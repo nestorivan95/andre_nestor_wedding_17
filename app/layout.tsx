@@ -13,6 +13,8 @@ const dancing = Dancing_Script({
   weight: ['400', '500', '600', '700'],
   variable: '--font-wedding',
   display: 'swap',
+  preload: true,
+  fallback: ['cursive'],
 })
 
 const lato = Lato({
