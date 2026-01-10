@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Lato, Dancing_Script } from 'next/font/google'
+import { Playfair_Display, Lato, Cormorant_Garamond } from 'next/font/google'
 import './globals.css'
 
 const playfair = Playfair_Display({
@@ -8,13 +8,12 @@ const playfair = Playfair_Display({
   display: 'swap',
 })
 
-const dancing = Dancing_Script({
+const wedding = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'], // IMPORTANTE: cursiva real
   variable: '--font-wedding',
   display: 'swap',
-  preload: true,
-  fallback: ['cursive'],
 })
 
 const lato = Lato({
@@ -35,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" className={`${playfair.variable} ${lato.variable} ${dancing.variable}`}>
+    <html lang="es" className={`${playfair.variable} ${lato.variable} ${wedding.variable}`}>
       <body className="font-body antialiased">{children}</body>
     </html>
   )

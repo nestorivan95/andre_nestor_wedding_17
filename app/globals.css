@@ -17,6 +17,14 @@
     font-kerning: normal;
   }
   
+  /* Evitar cursiva sintética y mejorar renderizado */
+  .font-wedding {
+    font-synthesis: none; /* evita italic/bold falsos */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
   /* Mejorar renderizado de fuentes en Windows */
   h1, h2, h3, h4, h5, h6 {
     -webkit-font-smoothing: antialiased;

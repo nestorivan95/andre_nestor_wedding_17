@@ -18,8 +18,8 @@ module.exports = {
       },
       fontFamily: {
         'elegant': ['var(--font-elegant)', 'Playfair Display', 'Georgia', 'serif'],
-        'wedding': ['var(--font-wedding)', 'Dancing Script', 'Brush Script MT', 'cursive'],
-        'body': ['var(--font-body)', 'Lato', 'Arial', 'sans-serif'],
+        'wedding': ['var(--font-wedding)', 'ui-serif', 'Georgia', 'serif'],
+        'body': ['var(--font-body)', 'Lato', 'ui-sans-serif', 'system-ui', 'Arial', 'sans-serif'],
       },
     },
   },
