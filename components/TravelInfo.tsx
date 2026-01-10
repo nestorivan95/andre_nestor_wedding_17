@@ -62,13 +62,13 @@ export default function TravelInfo() {
               <h4 className="font-semibold text-xl mb-2">Movich Las Lomas</h4>
               <div className="space-y-2 text-sm">
                 <p className="text-gray-600">
-                  <span className="font-semibold">Dirección:</span> Llanogrande, Antioquia
+                  <span className="font-semibold">Dirección:</span> Glorieta Aeropuerto José María Córdova, Rionegro, Antioquia
                 </p>
                 <p className="text-gray-600">
-                  <span className="font-semibold">Tel:</span> Por confirmar
+                  <span className="font-semibold">Tel:</span> (601) 4824466
                 </p>
                 <p className="text-gray-600">
-                  <span className="font-semibold">Página web:</span> Por confirmar
+                  <span className="font-semibold">Página web:</span> https://www.movichhotels.com/
                 </p>
               </div>
             </div>
