@@ -18,7 +18,7 @@ module.exports = {
       },
       fontFamily: {
         'elegant': ['var(--font-elegant)', 'Playfair Display', 'Georgia', 'serif'],
-        'wedding': ['var(--font-wedding)', 'ui-serif', 'Georgia', 'serif'],
+        'wedding': ['var(--font-wedding)', 'Bodoni Moda', 'Bodoni', 'ui-serif', 'Georgia', 'serif'],
         'body': ['var(--font-body)', 'Lato', 'ui-sans-serif', 'system-ui', 'Arial', 'sans-serif'],
       },
     },

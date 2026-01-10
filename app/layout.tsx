@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Lato, Cormorant_Garamond } from 'next/font/google'
+import { Playfair_Display, Lato, Bodoni_Moda } from 'next/font/google'
 import './globals.css'
 
 const playfair = Playfair_Display({
@@ -8,10 +8,10 @@ const playfair = Playfair_Display({
   display: 'swap',
 })
 
-const wedding = Cormorant_Garamond({
+const wedding = Bodoni_Moda({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  style: ['normal', 'italic'], // IMPORTANTE: cursiva real
+  style: ['normal', 'italic'], // IMPORTANTE: cursiva real (500 italic)
   variable: '--font-wedding',
   display: 'swap',
 })
