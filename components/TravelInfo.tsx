@@ -19,7 +19,7 @@ export default function TravelInfo() {
             Estas son las opciones más cercanas y recomendadas para nuestros invitados.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             <div className="p-6 bg-wedding-cream rounded-xl border-l-4 border-wedding-gold">
               <h4 className="font-semibold text-xl mb-2">Hotel Lagoon</h4>
               <div className="space-y-2 text-sm">
@@ -54,6 +54,21 @@ export default function TravelInfo() {
                 </p>
                 <p className="text-gray-600">
                   <span className="font-semibold">Página web:</span> Booking o Airbnb
+                </p>
+              </div>
+            </div>
+
+            <div className="p-6 bg-wedding-cream rounded-xl border-l-4 border-wedding-gold">
+              <h4 className="font-semibold text-xl mb-2">Movich Las Lomas</h4>
+              <div className="space-y-2 text-sm">
+                <p className="text-gray-600">
+                  <span className="font-semibold">Dirección:</span> Llanogrande, Antioquia
+                </p>
+                <p className="text-gray-600">
+                  <span className="font-semibold">Tel:</span> Por confirmar
+                </p>
+                <p className="text-gray-600">
+                  <span className="font-semibold">Página web:</span> Por confirmar
                 </p>
               </div>
             </div>

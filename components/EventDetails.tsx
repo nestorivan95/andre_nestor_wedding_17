@@ -135,6 +135,28 @@ export default function EventDetails() {
                 </div>
               </div>
 
+              {/* Lugares para arreglarse - Mujeres */}
+              <div className="mt-6 p-6 bg-wedding-cream rounded-xl border-l-4 border-wedding-gold">
+                <h5 className="font-semibold text-lg mb-4 text-wedding-gold flex items-center">
+                  <span className="text-2xl mr-2">💄</span>
+                  Lugares para Arreglarse
+                </h5>
+                <p className="text-gray-700 mb-4">
+                  Para las mujeres que deseen arreglarse el día del evento, te compartimos algunas opciones:
+                </p>
+                <div className="space-y-3 text-gray-700">
+                  <p className="text-sm">
+                    <span className="font-semibold">• Salones de belleza en Llanogrande:</span> Hay varias opciones disponibles en la zona.
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-semibold">• Servicios a domicilio:</span> Puedes contactar salones que ofrecen servicio a domicilio en el área.
+                  </p>
+                  <p className="text-sm">
+                    <span className="font-semibold">• Recomendación:</span> Te sugerimos hacer tu reserva con anticipación para asegurar tu cupo.
+                  </p>
+                </div>
+              </div>
+
               {/* Moodboard de Pinterest */}
               <div className="mt-6 text-center">
                 <p className="text-gray-700 mb-4">
@@ -144,7 +166,7 @@ export default function EventDetails() {
                   href="https://pin.it/h3bk8Dedg"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block btn-secondary"
+                  className="inline-block btn-primary text-lg px-8 py-4 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
                 >
                   Ver Moodboard en Pinterest
                 </a>
@@ -157,9 +179,8 @@ export default function EventDetails() {
                 Consideraciones del Clima
               </h4>
               <p className="text-gray-700">
-                El evento será en interiores. Sin embargo,
-                te recomendamos traer una chaqueta ligera por si acaso. El salón
-                tiene piso de mármol, así que considera zapatos cómodos para bailar.
+                La ceremonia y el cóctel serán al aire libre, por lo que te recomendamos traer lentes de sol y un saco o chaqueta ligera. 
+                La fiesta será en interiores. El salón tiene piso de mármol, así que considera zapatos cómodos para bailar.
               </p>
             </div>
           </div>
