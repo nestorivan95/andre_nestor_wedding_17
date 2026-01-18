@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Hero from './Hero'
 
-const CORRECT_PASSWORD = 'AndreaNestor2026_17' // Contraseña de acceso
+const CORRECT_PASSWORD = 'AN17' // Contraseña de acceso
 
 export default function PasswordProtection({ children }: { children: React.ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false)

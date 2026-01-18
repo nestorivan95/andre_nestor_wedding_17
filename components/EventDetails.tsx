@@ -53,6 +53,9 @@ export default function EventDetails() {
                 >
                   Abrir en Google Maps
                 </a>
+                <p className="text-sm md:text-base text-gray-600 mt-4">
+                  Nota: El lunes 18 de mayo es día festivo. ¡Disfruta el fin de semana completo!
+                </p>
               </div>
             </div>
           </div>
@@ -71,7 +74,7 @@ export default function EventDetails() {
                 Estacionamiento
               </h4>
               <p className="text-gray-700">
-                El salón cuenta con estacionamiento gratuito para todos los invitados.
+                El salón cuenta con estacionamiento gratuito, pero los cupos de los carros son limitados.
                 Te recomendamos llegar 30 minutos antes.
               </p>
             </div>
