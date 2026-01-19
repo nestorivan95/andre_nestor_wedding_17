@@ -53,9 +53,12 @@ export default function EventDetails() {
                 >
                   Abrir en Google Maps
                 </a>
-                <p className="text-sm md:text-base text-gray-600 mt-4">
-                  Nota: El lunes 18 de mayo es día festivo. ¡Disfruta el fin de semana completo!
-                </p>
+                <div className="mt-4 inline-flex items-center rounded-lg bg-wedding-beige px-4 py-3 text-sm md:text-base text-gray-700">
+                  <span className="font-semibold">Nota:</span>
+                  <span className="ml-2">
+                    El lunes 18 de mayo es día festivo. ¡Disfruta el fin de semana completo!
+                  </span>
+                </div>
               </div>
             </div>
           </div>

@@ -59,10 +59,15 @@ export default function Contact() {
             Confirmación de Asistencia
           </h3>
           
-          <p className="text-center text-gray-700 mb-8 text-lg">
-            Por favor, comunícate con alguno de los novios para confirmar tu asistencia
-            al evento del 17 de mayo. Fecha máxima para confirmar: 1 de abril de 2026.
-          </p>
+          <div className="text-center text-gray-700 text-lg">
+            <p className="mb-4">
+              Por favor, comunícate con alguno de los novios para confirmar tu asistencia
+              al evento del 17 de mayo.
+            </p>
+            <p className="inline-block rounded-lg bg-wedding-beige px-4 py-2 font-semibold text-gray-800">
+              Fecha máxima para confirmar: 1 de abril de 2026.
+            </p>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="text-center p-6 bg-white rounded-xl shadow-md">
