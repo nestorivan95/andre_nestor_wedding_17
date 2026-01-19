@@ -138,28 +138,6 @@ export default function EventDetails() {
                 </div>
               </div>
 
-              {/* Lugares para arreglarse - Mujeres */}
-              <div className="mt-6 p-6 bg-wedding-cream rounded-xl border-l-4 border-wedding-gold">
-                <h5 className="font-semibold text-lg mb-4 text-wedding-gold flex items-center">
-                  <span className="text-2xl mr-2">💄</span>
-                  Lugares para Arreglarse
-                </h5>
-                <p className="text-gray-700 mb-4">
-                  Para las mujeres que deseen arreglarse el día del evento, te compartimos algunas opciones:
-                </p>
-                <div className="space-y-3 text-gray-700">
-                  <p className="text-sm">
-                    <span className="font-semibold">• Salones de belleza en Llanogrande:</span> Hay varias opciones disponibles en la zona.
-                  </p>
-                  <p className="text-sm">
-                    <span className="font-semibold">• Servicios a domicilio:</span> Puedes contactar salones que ofrecen servicio a domicilio en el área.
-                  </p>
-                  <p className="text-sm">
-                    <span className="font-semibold">• Recomendación:</span> Te sugerimos hacer tu reserva con anticipación para asegurar tu cupo.
-                  </p>
-                </div>
-              </div>
-
               {/* Moodboard de Pinterest */}
               <div className="mt-6 text-center">
                 <p className="text-gray-700 mb-4">
@@ -185,6 +163,54 @@ export default function EventDetails() {
                 La ceremonia y el cóctel serán al aire libre, por lo que te recomendamos traer lentes de sol y un saco o chaqueta ligera. 
                 La fiesta será en interiores. El salón tiene piso de mármol, así que considera zapatos cómodos para bailar.
               </p>
+            </div>
+
+            <div className="mt-6 p-6 bg-wedding-cream rounded-xl border-l-4 border-wedding-gold">
+              <h4 className="font-semibold text-lg mb-4 text-wedding-gold flex items-center">
+                <span className="text-2xl mr-2">💄</span>
+                Lugares para Arreglarse
+              </h4>
+              <p className="text-gray-700 mb-4">
+                Estas son algunas opciones que recomendamos si lo necesitas, pero puedes utilizar otros servicios según tu preferencia.
+              </p>
+              <div className="space-y-4 text-sm text-gray-700">
+                <div>
+                  <p className="font-semibold">Kahlobeautyy</p>
+                  <p>Dirección: Mall Jardines Llanogrande 227</p>
+                  <a
+                    href="https://www.instagram.com/kahlobeautyy/?hl=es"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-wedding-gold hover:underline"
+                  >
+                    https://www.instagram.com/kahlobeautyy/?hl=es
+                  </a>
+                </div>
+                <div>
+                  <p className="font-semibold">Mam_Manuelalzate</p>
+                  <p>Dirección: Medellin (Domicilio)</p>
+                  <a
+                    href="https://www.instagram.com/mam_manuelalzate/?igsh=MWV4ZTl1ZW51Ymd5dQ%3D%3D#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-wedding-gold hover:underline"
+                  >
+                    https://www.instagram.com/mam_manuelalzate/?igsh=MWV4ZTl1ZW51Ymd5dQ%3D%3D#
+                  </a>
+                </div>
+                <div>
+                  <p className="font-semibold">Makeupcollegeoriente</p>
+                  <p>Dirección: Rionegro</p>
+                  <a
+                    href="https://www.instagram.com/makeupcollegeoriente/?igsh=cHV6NDZyZTkyNzFr#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-wedding-gold hover:underline"
+                  >
+                    https://www.instagram.com/makeupcollegeoriente/?igsh=cHV6NDZyZTkyNzFr#
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -61,7 +61,7 @@ export default function Contact() {
           
           <p className="text-center text-gray-700 mb-8 text-lg">
             Por favor, comunícate con alguno de los novios para confirmar tu asistencia
-            al evento del 17 de mayo.
+            al evento del 17 de mayo. Fecha máxima para confirmar: 1 de abril de 2026.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">

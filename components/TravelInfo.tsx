@@ -17,6 +17,7 @@ export default function TravelInfo() {
           
           <p className="text-center text-gray-700 mb-8">
             Estas son las opciones más cercanas y recomendadas para nuestros invitados.
+            En la zona también hay otros hoteles y Airbnbs que puedes reservar según tu preferencia.
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
