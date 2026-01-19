@@ -1,6 +1,8 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
+import qrCodeImage from '../img/qr_code.jpeg'
 
 export default function Gifts() {
   const [isQrOpen, setIsQrOpen] = useState(false)
@@ -56,7 +58,7 @@ export default function Gifts() {
                 Transferencia bancaria
               </h3>
               <p className="text-gray-700 mb-6">
-                Si deseas apoyar nuestro nuevo hogar con una transferencia, puedes usar la siguiente llave:
+              Si prefieres hacer una transferencia, puedes usar los siguientes datos:
               </p>
               <div className="flex flex-col items-center gap-3">
                 <p className="text-gray-700">
@@ -97,8 +99,8 @@ export default function Gifts() {
             <h4 className="text-xl font-semibold text-center text-gray-800 mb-4">
               Código QR
             </h4>
-            <img
-              src="/img/qr_code.jpeg"
+            <Image
+              src={qrCodeImage}
               alt="Código QR Bancolombia"
               className="w-full h-auto rounded-lg"
             />
